@@ -7,9 +7,10 @@ const ThemeContext = createContext();
 // saves darkMode to local Storage.
 export const ThemeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(
-    () => JSON.parse(localStorage.getItem("darkMode")) || false
+    () => JSON.parse(localStorage.getItem("darkMode")) ?? true
   );
 
+  // Use for darkmode.
   useEffect(() => {
     const root = document.documentElement;
 

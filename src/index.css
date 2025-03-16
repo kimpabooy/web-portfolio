@@ -26,16 +26,17 @@
   background: #f59e0b;
 }
 
+/* text animation above road */
 @theme {
   @keyframes bounce {
     0%, 
     100% {
       transform: translateY(-25%);
-      animiation-timing-function: ease-out;
+      animation-timing-function: ease-out;
     }
     20% {
       transform: translateY(2px);
-      animiation-timing-function: ease-out;
+      animation-timing-function: ease-out;
     }
   }
 }

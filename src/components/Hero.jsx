@@ -29,7 +29,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center isolate">
+    <div className="w-full h-screen flex flex-col justify-center items-center isolate relative z-10">
       <Navbar />
       <div className="flex flex-col md:items-center items-start xl:mt-50 xl:gap-y-10 gap-y-3 xl:mb-0 md:mb-20 mb-0">
         <h1 className="flex flex-col xl:space-y-8 md:space-y-4 space-y-2 xl:text-6xl md:text-4xl text-3xl md:font-normal font-bolder">
@@ -68,7 +68,7 @@ const Hero = () => {
         </h1>
         {/* Read My Story knapp */}
         <button
-          className="xl:w-[400px] md:w-[300px] w-[270px] bg-gray-900 dark:bg-gray-200 md:py-1 py-0 md:px-4 px-2 xl:text-xl text-base text-white dark:text-gray-900 tracking-widest rounded-r-4xl flex justify-between item-center md:mr-auto md:mx-0 mx-auto transition-colors duration-500"
+          className="xl:w-[400px] md:w-[300px] w-[270px] bg-gray-900 dark:bg-gray-200 md:py-1 py-0 md:px-4 px-2 xl:text-2xl md:text-xl text-base text-white dark:text-gray-900 tracking-widest rounded-r-4xl flex justify-between item-center md:mr-auto md:mx-0 mx-auto transition-colors duration-500"
           onClick={() => setIsTextVisible(!isTextVisible)} //inverting false statment for text.
           onMouseEnter={() => setroadImageOpacity(0.8)}
           onMouseLeave={() => setroadImageOpacity(0.5)}
@@ -89,19 +89,20 @@ const Hero = () => {
             </a>
           ))}
         </div>
-        {/* TO-DO försök centrera bilden bättre */}
-        <div className="md:w-[500px] w-[350px] absolut left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 ">
+        {/* Road img, TO-DO försök centrera bilden bättre */}
+        <div className="lg:w-[400px] md:w-[350px] w-[350px] absolut left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10">
           <img
             src="/images/road.png"
             alt="Road Image"
             className="w-full mx-40 xl:-mt-50 lg:mt-3 lg:ml-65 md:ml-70 transition-opacity duration-500"
             style={{ opacity: roadImageOpacity }}
           />
-          <span className="xl:text-xs md:text-[10px] text-[8px] font-bold tracking-wide absolute -top-5 xl:-right-50 xl:-top-55 lg:-right-45 lg:-top-2 md:-right-50 -right-28 rotate-[3.5deg] animate-bounce">
+          {/* animated text over road */}
+          <span className="xl:text-xs md:text-[10px] text-[8px] font-bold tracking-wide absolute -top-5 xl:-right-55 xl:-top-55 lg:-right-53 lg:-top-2 md:-right-60 -right-28 rotate-[3.5deg] animate-bounce">
             Looking for new challenges
           </span>
           <div
-            className={`xl:h-[150px] h-[100px] xl:translate-x-1/4 lg:translate-x-1/4 translate-x-2/5 px-3 xl:text-lg md:text-base text-xs font-light text-gray-900 dark:text-gray-200 text-justify tracking-wide overflow-y-auto transform origin-top custom-scrollbar ${
+            className={`xl:h-[150px] h-[100px] px-3 xl:text-lg md:text-base text-xs font-light text-gray-900 dark:text-gray-200 tracking-wide transform overflow-y-auto origin-top custom-scrollbar ${
               isTextVisible ? "scale-y-100" : "scale-y-0"
             } transition-transform duration-500 ease-in-out`} //1h.07m.20s behöver kontrolleras. https://tailwindcss.com/docs/responsive-design#overview
           >
