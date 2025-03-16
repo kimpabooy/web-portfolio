@@ -1,19 +1,25 @@
 export const letters = [
-  { char: "H", img: "/public/images/letter-h.png", rotate: "-rotate-25" },
-  { char: "e", img: "/public/images/letter-e.png", rotate: "-rotate-25" },
-  { char: "l", img: "/public/images/letter-l.png", rotate: "-rotate-25" },
-  { char: "l", img: "/public/images/letter-l.png", rotate: "-rotate-25" },
-  { char: "o", img: "/public/images/letter-o.png", rotate: "-rotate-25" },
+  { char: "H", img: "/images/letter-h.png", rotate: "-rotate-25" },
+  { char: "e", img: "//images/letter-e.png", rotate: "-rotate-25" },
+  { char: "l", img: "/images/letter-l.png", rotate: "-rotate-25" },
+  { char: "l", img: "/images/letter-l.png", rotate: "-rotate-25" },
+  { char: "o", img: "/images/letter-o.png", rotate: "-rotate-25" },
 ];
 
 export const professionTexts = ["a Front End", "a Back End", "a Full Stack"];
 
 export const socialsIcons = [
-  { icon: "bx bxl-discord" },
-  { icon: "bx bxl-instagram" },
-  { icon: "bx bxl-linkedin" },
-  { icon: "bx bxl-github" },
-  { icon: "bx bxl-email" },
+  {
+    icon: "bx bxl-discord",
+    url: "https://discordapp.com/users/1280465607669715029",
+  },
+  { icon: "bx bxl-instagram", url: "https://www.instagram.com/kimpabooy/" },
+  {
+    icon: "bx bxl-linkedin",
+    url: "https://www.linkedin.com/in/kim-andersson-31ba8212a",
+  },
+  { icon: "bx bxl-github", url: "https://github.com/kimpabooy/" },
+  { icon: "bx bxl-email", url: "mailto:kimpabooy@live.com" },
 ];
 
 export const aboutText =

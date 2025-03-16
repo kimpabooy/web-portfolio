@@ -85,7 +85,7 @@ const Hero = () => {
         <div className="flex md:gap-12 gap-2 mr-auto absolute md:relative left-4 md:left-auto top-20 md:top-auto flex-col md:flex-row">
           {socialsIcons.map((social, index) => (
             <a
-              href="#"
+              href={social.url}
               key={index}
               className="xl:text-3xl text-2xl text-red-500 dark:text-yellow-500 dark:hover:text-white hover:text-gray-900 transition-colors duration-300"
             >
@@ -94,19 +94,21 @@ const Hero = () => {
           ))}
         </div>
         {/* Road img, TO-DO försök centrera bilden bättre */}
-        <div className="lg:w-[400px] md:w-[350px] w-[350px] absolut left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10">
+        <div className="lg:w-[600px] md:w-[500px] w-[350px] absolute left-1/2 -translate-x-1/2 -z-10">
           <img
             src="/images/road.png"
             alt="Road Image"
-            className="w-full mx-40 xl:-mt-50 lg:mt-3 lg:ml-65 md:ml-70 transition-opacity duration-500"
+            className="w-full xl:mt-5 lg:-mt-5 md:-mt-2 sm:mt-8 mt-10 xl:ml-65 lg:ml-35 md:ml-35 sm:ml-25 ml-25 transition-opacity duration-500"
+            // className="w-full mx-40 xl:-mt-50 lg:mt-3 lg:ml-65 md:ml-70 transition-opacity duration-500"
             style={{ opacity: roadImageOpacity }}
           />
           {/* animated text over road */}
-          <span className="xl:text-xs md:text-[10px] text-[8px] font-bold tracking-wide absolute -top-5 xl:-right-55 xl:-top-55 lg:-right-53 lg:-top-2 md:-right-60 -right-28 rotate-[3.5deg] animate-bounce">
+          <span className="xl:text-xs md:text-[10px] text-[8px] font-bold tracking-wide absolute xl:top-0 lg:-top-10 md:-top-7 sm:top-1 top-5 xl:-right-43 lg:-right-7 md:-right-15 -right-15 rotate-[3.5deg] animate-bounce">
             Looking for new challenges
           </span>
           <div
-            className={`xl:h-[150px] h-[100px] px-3 xl:text-lg md:text-base text-xs font-light text-gray-900 dark:text-gray-200 tracking-wide transform overflow-y-auto origin-top custom-scrollbar ${
+            // Ruta för "My story"
+            className={`h-[250px] px-3 xl:text-lg md:text-base text-xs font-light text-gray-900 dark:text-gray-200 tracking-wide transform overflow-y-auto origin-top custom-scrollbar ${
               isTextVisible ? "scale-y-100" : "scale-y-0"
             } transition-transform duration-500 ease-in-out`} //1h.07m.20s behöver kontrolleras. https://tailwindcss.com/docs/responsive-design#overview
           >
