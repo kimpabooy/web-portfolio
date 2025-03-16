@@ -1,6 +1,6 @@
 export const letters = [
   { char: "H", img: "/images/letter-h.png", rotate: "-rotate-25" },
-  { char: "e", img: "//images/letter-e.png", rotate: "-rotate-25" },
+  { char: "e", img: "/images/letter-e.png", rotate: "-rotate-25" },
   { char: "l", img: "/images/letter-l.png", rotate: "-rotate-25" },
   { char: "l", img: "/images/letter-l.png", rotate: "-rotate-25" },
   { char: "o", img: "/images/letter-o.png", rotate: "-rotate-25" },

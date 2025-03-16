@@ -88,18 +88,17 @@ const Hero = () => {
               href={social.url}
               key={index}
               className="xl:text-3xl text-2xl text-red-500 dark:text-yellow-500 dark:hover:text-white hover:text-gray-900 transition-colors duration-300"
+              target="_blank"
             >
               <i className={social.icon}></i>
             </a>
           ))}
         </div>
-        {/* Road img, TO-DO försök centrera bilden bättre */}
         <div className="lg:w-[600px] md:w-[500px] w-[350px] absolute left-1/2 -translate-x-1/2 -z-10">
           <img
             src="/images/road.png"
             alt="Road Image"
             className="w-full xl:mt-5 lg:-mt-5 md:-mt-2 sm:mt-8 mt-10 xl:ml-65 lg:ml-35 md:ml-35 sm:ml-25 ml-25 transition-opacity duration-500"
-            // className="w-full mx-40 xl:-mt-50 lg:mt-3 lg:ml-65 md:ml-70 transition-opacity duration-500"
             style={{ opacity: roadImageOpacity }}
           />
           {/* animated text over road */}
@@ -110,7 +109,7 @@ const Hero = () => {
             // Ruta för "My story"
             className={`h-[250px] px-3 xl:text-lg md:text-base text-xs font-light text-gray-900 dark:text-gray-200 tracking-wide transform overflow-y-auto origin-top custom-scrollbar ${
               isTextVisible ? "scale-y-100" : "scale-y-0"
-            } transition-transform duration-500 ease-in-out`} //1h.07m.20s behöver kontrolleras. https://tailwindcss.com/docs/responsive-design#overview
+            } transition-transform duration-500 ease-in-out`}
           >
             <p className="xl:py-3 py-1 px-1 [&::first-letter]:text-[30px] [&::first-letter]:ml-5 [&::first-letter]:text-red-500 dark:[&::first-letter]:text-yellow-500">
               {aboutText}
