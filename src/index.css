@@ -29,21 +29,23 @@
 /* #gif {
   scale: 1.5;
 } */
-
-/* text animation above road */
 @theme {
+
   @keyframes bounce {
-    0%, 
-    100% {
-      transform: translateY(-25%);
-      animation-timing-function: ease-out;
-    }
-    20% {
-      transform: translateY(2px);
-      animation-timing-function: ease-out;
+      0%, 
+      100% {
+        transform: translateY(-25%);
+        animation-timing-function: ease-out;
+      }
+      50% {
+        transform: translateY(2px);
+        animation-timing-function: ease-out;
+      }
+      
     }
   }
-}
+  /* text animation above road */
+  @custom-variant dark (&:where(.dark, .dark *));
 
-@custom-variant dark (&:where(.dark, .dark *));
+
 
