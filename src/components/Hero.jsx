@@ -102,7 +102,7 @@ const Hero = () => {
             style={{ opacity: roadImageOpacity }}
           />
           {/* animated text over road */}
-          <span className="xl:text-xs md:text-[10px] text-[8px] font-bold tracking-wide absolute xl:top-0 lg:-top-10 md:-top-7 sm:top-1 top-5 xl:-right-43 lg:-right-7 md:-right-15 -right-2 rotate-[3.5deg] animate-bounce">
+          <span className="xl:text-xs md:text-[10px] text-[8px] font-bold tracking-wide absolute xl:top-0 lg:-top-10 md:-top-7 sm:top-1 top-5 xl:-right-43 lg:-right-7 md:-right-15 sm:-right-12 -right-2 rotate-[3.5deg] animate-bounce">
             Looking for new challenges
           </span>
           <div
