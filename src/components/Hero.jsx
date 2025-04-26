@@ -107,11 +107,11 @@ const Hero = () => {
           </span>
           <div
             // Ruta för "My story"
-            className={`h-[250px] px-3 xl:text-lg md:text-base text-xs font-light text-gray-900 dark:text-gray-200 tracking-wide transform overflow-y-auto origin-top custom-scrollbar ${
+            className={`h-[275px] px-3 xl:text-lg md:text-base text-xs font-light text-gray-900 dark:text-gray-200 tracking-wide transform overflow-y-auto origin-top custom-scrollbar ${
               isTextVisible ? "scale-y-100" : "scale-y-0"
             } transition-transform duration-500 ease-in-out`}
           >
-            <p className="xl:py-3 py-1 px-1 [&::first-letter]:text-[30px] [&::first-letter]:ml-5 [&::first-letter]:text-red-500 dark:[&::first-letter]:text-yellow-500">
+            <p className="xl:py-3 py-2 px-1 [&::first-letter]:text-[30px] [&::first-letter]:ml-5 [&::first-letter]:text-red-500 dark:[&::first-letter]:text-yellow-500">
               {aboutText}
             </p>
           </div>
